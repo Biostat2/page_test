@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Practicals</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="shortcut icon" href="favicon.ico">
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/site.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Biostat2</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="details.html">
+    <span class="fa fa-bar-chart"></span>
+     
+    Details
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-graduation-cap"></span>
+     
+    Lectures
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="lecture01_intro.html">Lecture 01 - intro</a>
+    </li>
+    <li>
+      <a href="lecture02_rmarkdown.html">Lecture 02 - Rmarkdown</a>
+    </li>
+    <li>
+      <a href="lecture03_plotting.html">Lecture 03 - plotting</a>
+    </li>
+    <li>
+      <a href="lecture04_programming.html">Lecture 04 - programming</a>
+    </li>
+    <li>
+      <a href="lecture05_dplyr.html">Lecture 05 - dplyr</a>
+    </li>
+    <li>
+      <a href="lecture06_tidyr.html">Lecture 06 - tidyr</a>
+    </li>
+    <li>
+      <a href="lecture07_stat1.html">Lecture 07 - intro stat1</a>
+    </li>
+    <li>
+      <a href="lecture08_stat2.html">Lecture 08 - intro stat2</a>
+    </li>
+    <li>
+      <a href="lecture09_regression.html">Lecture 09 - regression</a>
+    </li>
+    <li>
+      <a href="lecture10_multiple_lm.html">Lecture 10 - multiple regression</a>
+    </li>
+    <li>
+      <a href="lecture11_ANOVA.html">Lecture 11 - ANOVA</a>
+    </li>
+    <li>
+      <a href="lecture12_multiple_testing.html">Lecture 12 - multiple testing</a>
+    </li>
+    <li>
+      <a href="lecture13_contrast.html">Lecture 13 - contrasts</a>
+    </li>
+    <li>
+      <a href="lecture14_count.html">Lecture 14 - count data</a>
+    </li>
+    <li>
+      <a href="lecture15_purrr.html">Lecture 15 - functional programming</a>
+    </li>
+    <li>
+      <a href="lecture16_PCA.html">Lecture 16 - PCA</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">slides, keyboard shortcuts:</li>
+    <li class="dropdown-header">o: outline</li>
+    <li class="dropdown-header">w: widescreen on/off</li>
+    <li class="dropdown-header">f: fullscreen on/off</li>
+    <li class="dropdown-header">ctrl +/ ctrl -: zoom in/out</li>
+  </ul>
+</li>
+<li>
+  <a href="practicals.html">
+    <span class="fa fa-desktop"></span>
+     
+    Practicals
+  </a>
+</li>
+<li>
+  <a href="exam.html">Exams</a>
+</li>
+<li>
+  <a href="install_tutorial.html">
+    <span class="fa fa-cogs"></span>
+     
+    Install
+  </a>
+</li>
+<li>
+  <a href="misc.html">
+    <span class="fa fa-book"></span>
+     
+    Misc
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">
+    <span class="fa fa-question fa-lg"></span>
+     
+    About
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Practicals</h1>
+
+</div>
+
+
+<div id="project" class="section level3">
+<h3>Project</h3>
+<p>to be done with a mate.</p>
+<ul>
+<li><a href="project_question.html">instructions</a></li>
+</ul>
+</div>
+<div id="td01-rmarkdown" class="section level3">
+<h3>TD01, rmarkdown</h3>
+<ul>
+<li><a href="TD01_question.html">instructions</a></li>
+<li><a href="TD01_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td02-plotting" class="section level3">
+<h3>TD02, plotting</h3>
+<ul>
+<li><a href="TD02_question.html">instructions</a></li>
+<li><a href="TD02_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td03-programming" class="section level3">
+<h3>TD03, programming</h3>
+<ul>
+<li><a href="TD03_question.html">instructions</a></li>
+<li><a href="TD03_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td04-tidyr-dplyr-on-microarray" class="section level3">
+<h3>TD04, tidyr / dplyr on microarray</h3>
+<ul>
+<li><a href="TD04_question.html">instructions</a></li>
+<li><a href="TD04_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td05-biostat-introduction-1" class="section level3">
+<h3>TD05, Biostat introduction 1</h3>
+<ul>
+<li><a href="TD05_question.html">instructions</a></li>
+<li><a href="TD05_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td06-linear-regression" class="section level3">
+<h3>TD06, linear regression</h3>
+<ul>
+<li><a href="TD06_question.html">instructions</a></li>
+<li><a href="TD06_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td07-multiple-regression" class="section level3">
+<h3>TD07, multiple regression</h3>
+<ul>
+<li><a href="TD07_question.html">instructions</a></li>
+<li><a href="TD07_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td08-anova-and-reminders" class="section level3">
+<h3>TD08, ANOVA and reminders</h3>
+<ul>
+<li><a href="TD08_question.html">instructions</a></li>
+<li><a href="TD08_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td09-the-bauer-dataset" class="section level3">
+<h3>TD09, the <a href="http://www.molbiolcell.org/content/19/1/352.long">Bauer dataset</a></h3>
+<ul>
+<li><a href="TD09_question.html">instructions</a></li>
+<li><a href="TD09_solution.html">solutions</a></li>
+</ul>
+</div>
+<div id="td10-the-simpsons-paradox" class="section level3">
+<h3>TD10, the Simpson’s paradox</h3>
+<ul>
+<li><a href="TD10_question.html">instructions</a></li>
+<li><a href="TD10_solution.html">solutions</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
